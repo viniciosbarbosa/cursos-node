@@ -23,6 +23,12 @@ export class RolesRepository {
     return role;
   }
 
+  findByName(name: string): Role | undefined {
+    return this.roles.find((role) => {
+      return role.name === name;
+    });
+  }
+
   findAll(): Role[] {
     return this.roles;
   }
