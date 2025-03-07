@@ -3,9 +3,9 @@ import express, { Response, Request, NextFunction } from "express";
 import "express-async-errors";
 import cors from "cors";
 import swaggerUi from "swagger-ui-express";
+import swaggerFile from "../../swagger.json";
 import { routes } from "./routes";
 import { AppError } from "@shared/errors/AppError";
-import swaggerFile from "../../swagger.json";
 
 const app = express();
 
