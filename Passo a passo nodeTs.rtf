@@ -1,0 +1,226 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red232\green64\blue92;\red30\green33\blue39;\red155\green162\blue177;
+\red197\green136\blue83;\red121\green194\blue101;\red108\green113\blue123;\red30\green33\blue39;\red108\green113\blue123;
+\red155\green162\blue177;\red40\green173\blue184;\red0\green0\blue0;\red0\green0\blue0;\red201\green64\blue214;
+\red222\green180\blue104;\red81\green157\blue235;\red155\green163\blue178;}
+{\*\expandedcolortbl;;\cssrgb\c93725\c34902\c43529;\cssrgb\c15686\c17255\c20392;\cssrgb\c67059\c69804\c74902;
+\cssrgb\c81961\c60392\c40000;\cssrgb\c53725\c79216\c47059;\cssrgb\c49804\c51765\c55686;\cssrgb\c15686\c17255\c20392;\cssrgb\c49804\c51765\c55686;
+\cssrgb\c67059\c69804\c74902;\cssrgb\c16863\c72941\c77255;\cssrgb\c0\c1\c1;\cssrgb\c0\c1\c1;\cssrgb\c83529\c37255\c87059;
+\cssrgb\c89804\c75294\c48235;\cssrgb\c38039\c68627\c93725;\cssrgb\c67166\c69917\c74931;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14720\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Iniciando Projeto Node ts \
+\
+npm init -y  - criar package.json e nodeM\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 npm i -D typescript @types/node ts-node-dev tsconfig-paths -  instalar typescript e tipos e configura\'e7\'f5es e subir aplica\'e7\'f5es\
+\
+npx tsc --init  - cria ts.config\
+\
+Habiltar no Ts.config\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 "incremental"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \strokec4 ,      \cb1 \
+\cf2 \cb3 \strokec2 "target"\cf4 \strokec4 : \cf6 \cb3 \strokec6 "es2017"\cf4 \cb3 \strokec4 ,\cb1 \
+\cf2 \cb3 \strokec2 "baseUrl"\cf4 \strokec4 : \cf6 \cb3 \strokec6 "./"\cf4 \cb3 \strokec4 ,  \cb1 \
+\cf2 \cb3 \strokec2 "allowSyntheticDefaultImports"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \strokec4 ,    \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \cb8 \outl0\strokewidth0 "resolveJsonModule": true,      \cf9 \cb3 \outl0\strokewidth0 \strokec9   \cf4 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 "sourceMap"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \strokec4 , \cb1 \
+\cf2 \cb3 \strokec2 "outDir"\cf4 \strokec4 : \cf6 \cb3 \strokec6 "dist/"\cf4 \cb3 \strokec4 ,      \cb1 \
+\cf2 \cb3 \strokec2 "allowJs"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \strokec4 , \cb1 \
+\cf2 \cb3 \strokec2 "esModuleInterop"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \strokec4  \
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec2 "forceConsistentCasingInFileNames"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 "noFallthroughCasesInSwitch"\cf4 \strokec4 : \cf5 \strokec5 false\cf4 \strokec4  \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf9 \cb3 \strokec9 // "strict": true\cf4 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \strokec2 "strictPropertyInitialization"\cf4 \strokec4 : \cf5 \strokec5 false\cf4 \strokec4 , \
+\cf2 \strokec2 "strictNullChecks"\cf4 \strokec4 : \cf5 \strokec5 false\cf4 \strokec4 ,   \cb1 \
+\cf2 \cb3 \strokec2 "noImplicitAny"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \strokec4 ,\cb1 \
+\cf2 \cb3 \strokec2 "strictBindCallApply"\cf4 \strokec4 : \cf5 \strokec5 false\cf4 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 "experimentalDecorators"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \strokec4 ,                  \cb1 \
+\cf2 \cb3 \strokec2 "emitDecoratorMetadata"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \strokec4 ,   \cb1 \
+\cf2 \cb3 \strokec2 "skipLibCheck"\cf4 \strokec4 : \cf5 \strokec5 true\cf4 \cb1 \strokec4 \
+\cf2 \cb3 \strokec2 "paths" \{\} Aqui vai colocar os caminhos de rotas\cf4 \cb1 \strokec4 \
+\
+Incluir no final \
+\cf2 \cb3 \strokec2 "include"\cf4 \strokec4 : [\cf6 \cb3 \strokec6 "src"\cf4 \cb3 \strokec4 ],\cb1 \
+\cf2 \cb3 \strokec2 "exclude"\cf4 \strokec4 : [\cf6 \cb3 \strokec6 "dist"\cf4 \cb3 \strokec4 , \cf6 \cb3 \strokec6 "node_modules"\cf4 \cb3 \strokec4 ]\
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb1 \outl0\strokewidth0 Instalar rimRaf - para apagar dist antes de novo build\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 npm i rimraf
+\f1 \cf10 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \
+No scripts PackagesJson\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \outl0\strokewidth0 \strokec2 "scripts"\cf4 \strokec4 : \{\cb1 \
+\cb3     \cf2 \strokec2 "test"\cf4 \strokec4 : \cf6 \cb3 \strokec6 "echo \cf11 \cb3 \strokec11 \\"\cf6 \cb3 \strokec6 Error: no test specified\cf11 \cb3 \strokec11 \\"\cf6 \cb3 \strokec6  && exit 1"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3     \cf2 \strokec2 "lint"\cf4 \strokec4 : \cf6 \cb3 \strokec6 "eslint ,"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3     \cf2 \strokec2 "lint:fix"\cf4 \strokec4 : \cf6 \cb3 \strokec6 "eslint .--fix"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3     \cf2 \strokec2 "build"\cf4 \strokec4 : \cf6 \cb3 \strokec6 "rimraf dist && npx tsc"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3     \cf2 \strokec2 "dev"\cf4 \strokec4 : \cf6 \cb3 \strokec6 "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts"\cf4 \cb1 \strokec4 \
+\cb3   \},\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+ESLINT\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf12 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 npm i -D eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser prettier eslint-config-prettier eslint-plugin-prettier\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs36 \cf10 \expnd0\expndtw0\kerning0
+CRIAR ARQUIVO 
+\f0\fs26 \cf13 \kerning1\expnd0\expndtw0 eslint.config.mjs\cf12 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs36 \cf14 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 typescriptEslintEslintPlugin\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "@typescript-eslint/eslint-plugin"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 prettier\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "eslint-plugin-prettier"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 globals\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "globals"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 tsParser\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "@typescript-eslint/parser"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 path\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "node:path"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \{ \cf2 \strokec2 fileURLToPath\cf4 \strokec4  \} \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "node:url"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 js\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "@eslint/js"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \{ \cf2 \strokec2 FlatCompat\cf4 \strokec4  \} \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "@eslint/eslintrc"\cf4 \cb3 \strokec4 ;\cb1 \
+\
+\cf14 \cb3 \strokec14 const\cf4 \cb3 \strokec4  \cf15 \cb3 \strokec15 __filename\cf4 \cb3 \strokec4  \cf11 \cb3 \strokec11 =\cf4 \cb3 \strokec4  \cf16 \cb3 \strokec16 fileURLToPath\cf4 \cb3 \strokec4 (\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4 .\cf2 \strokec2 meta\cf4 \strokec4 .\cf2 \strokec2 url\cf4 \strokec4 );\cb1 \
+\cf14 \cb3 \strokec14 const\cf4 \cb3 \strokec4  \cf15 \cb3 \strokec15 __dirname\cf4 \cb3 \strokec4  \cf11 \cb3 \strokec11 =\cf4 \cb3 \strokec4  \cf15 \cb3 \strokec15 path\cf4 \cb3 \strokec4 .\cf16 \cb3 \strokec16 dirname\cf4 \cb3 \strokec4 (\cf2 \strokec2 __filename\cf4 \strokec4 );\cb1 \
+\cf14 \cb3 \strokec14 const\cf4 \cb3 \strokec4  \cf15 \cb3 \strokec15 compat\cf4 \cb3 \strokec4  \cf11 \cb3 \strokec11 =\cf4 \cb3 \strokec4  \cf14 \cb3 \strokec14 new\cf4 \cb3 \strokec4  \cf16 \cb3 \strokec16 FlatCompat\cf4 \cb3 \strokec4 (\{\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3   \cf2 \strokec2 baseDirectory\cf4 \strokec4 : \cf2 \strokec2 __dirname\cf4 \strokec4 ,\cb1 \
+\cb3   \cf2 \strokec2 recommendedConfig\cf4 \strokec4 : \cf15 \cb3 \strokec15 js\cf4 \cb3 \strokec4 .\cf15 \cb3 \strokec15 configs\cf4 \cb3 \strokec4 .\cf2 \strokec2 recommended\cf4 \strokec4 ,\cb1 \
+\cb3   \cf2 \strokec2 allConfig\cf4 \strokec4 : \cf15 \cb3 \strokec15 js\cf4 \cb3 \strokec4 .\cf15 \cb3 \strokec15 configs\cf4 \cb3 \strokec4 .\cf2 \strokec2 all\cf4 \strokec4 ,\cb1 \
+\cb3 \});\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf14 \cb3 \strokec14 export\cf4 \cb3 \strokec4  \cf14 \cb3 \strokec14 default\cf4 \cb3 \strokec4  [\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb3   \{\cb1 \
+\cb3     \cf2 \strokec2 ignores\cf4 \strokec4 : [\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "**/.eslintrc.js"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "**/node_modules"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "**/dist"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "**/build"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "*.js"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "*.mjs"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3     ],\cb1 \
+\cb3   \},\cb1 \
+\cb3   ...\cf15 \cb3 \strokec15 compat\cf4 \cb3 \strokec4 .\cf16 \cb3 \strokec16 extends\cf4 \cb3 \strokec4 (\cb1 \
+\cb3     \cf6 \cb3 \strokec6 "plugin:@typescript-eslint/recommended"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3     \cf6 \cb3 \strokec6 "plugin:prettier/recommended"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3   ),\cb1 \
+\cb3   \{\cb1 \
+\cb3     \cf2 \strokec2 plugins\cf4 \strokec4 : \{\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "@typescript-eslint"\cf4 \cb3 \strokec4 : \cf2 \strokec2 typescriptEslintEslintPlugin\cf4 \strokec4 ,\cb1 \
+\cb3       \cf2 \strokec2 prettier\cf4 \strokec4 ,\cb1 \
+\cb3     \},\cb1 \
+\
+\cb3     \cf2 \strokec2 languageOptions\cf4 \strokec4 : \{\cb1 \
+\cb3       \cf2 \strokec2 globals\cf4 \strokec4 : \{\cb1 \
+\cb3         ...\cf15 \cb3 \strokec15 globals\cf4 \cb3 \strokec4 .\cf2 \strokec2 node\cf4 \strokec4 ,\cb1 \
+\cb3         ...\cf15 \cb3 \strokec15 globals\cf4 \cb3 \strokec4 .\cf2 \strokec2 jest\cf4 \strokec4 ,\cb1 \
+\cb3       \},\cb1 \
+\
+\cb3       \cf2 \strokec2 parser\cf4 \strokec4 : \cf2 \strokec2 tsParser\cf4 \strokec4 ,\cb1 \
+\cb3       \cf2 \strokec2 ecmaVersion\cf4 \strokec4 : \cf5 \strokec5 5\cf4 \strokec4 ,\cb1 \
+\cb3       \cf2 \strokec2 sourceType\cf4 \strokec4 : \cf6 \cb3 \strokec6 "module"\cf4 \cb3 \strokec4 ,\cb1 \
+\
+\cb3       \cf2 \strokec2 parserOptions\cf4 \strokec4 : \{\cb1 \
+\cb3         \cf2 \strokec2 project\cf4 \strokec4 : \cf6 \cb3 \strokec6 "tsconfig.json"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \},\cb1 \
+\cb3     \},\cb1 \
+\
+\cb3     \cf2 \strokec2 rules\cf4 \strokec4 : \{\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "@typescript-eslint/interface-name-prefix"\cf4 \cb3 \strokec4 : \cf6 \cb3 \strokec6 "off"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "@typescript-eslint/explicit-function-return-types"\cf4 \cb3 \strokec4 : \cf6 \cb3 \strokec6 "off"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "@typescript-eslint/explicit-module-boundary-types"\cf4 \cb3 \strokec4 : \cf6 \cb3 \strokec6 "off"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "@typescript-eslint/no-explicit-any"\cf4 \cb3 \strokec4 : \cf6 \cb3 \strokec6 "off"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "@typescript-eslint/ban-types"\cf4 \cb3 \strokec4 : \cf6 \cb3 \strokec6 "off"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3       \cf6 \cb3 \strokec6 "@typescript-eslint/no-unused-vars"\cf4 \cb3 \strokec4 : \cf6 \cb3 \strokec6 "off"\cf4 \cb3 \strokec4 ,\cb1 \
+\cb3     \},\cb1 \
+\cb3   \},\cb1 \
+\cb3 ];\cb1 \
+\
+INSTALAR EXPRESS\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0 \cf12 \strokec17 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 npm install express express-async-errors\
+\
+npm i -D @types/express\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf10 \expnd0\expndtw0\kerning0
+INSTALAR CORS\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+npm i cors\
+\
+npm i -D @types/cors \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf10 \expnd0\expndtw0\kerning0
+INSTALAR ENV
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 npm i dotenv\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf14 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec14 PORT\cf4 \cb3 \strokec4 =\cf6 \cb3 \strokec6 3000\
+\
+\pard\pardeftab720\partightenfactor0
+\cf10 \cb1 \outl0\strokewidth0 IMPORTAR SERVER.TS\cf4 \outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\partightenfactor0
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "dotenv/config"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 express\cf4 \strokec4 , \{ \cf2 \strokec2 Response\cf4 \strokec4 , \cf2 \strokec2 Request\cf4 \strokec4 , \cf2 \strokec2 NextFunction\cf4 \strokec4  \} \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "express"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "express-async-errors"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 cors\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "cors"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 swaggerUi\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "swagger-ui-express"\cf4 \cb3 \strokec4 ;\cb1 \
+\cf14 \cb3 \strokec14 import\cf4 \cb3 \strokec4  \cf2 \strokec2 swaggerFile\cf4 \strokec4  \cf14 \cb3 \strokec14 from\cf4 \cb3 \strokec4  \cf6 \cb3 \strokec6 "../../swagger.json"\cf4 \cb3 \strokec4 ;\cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf10 \expnd0\expndtw0\kerning0
+INSTALAR UUID
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 npm install uuid\
+npm install -D @types/uuid\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf10 \expnd0\expndtw0\kerning0
+INSTALAR SWAGGER\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs26 \cf10 \kerning1\expnd0\expndtw0 npm install swagger-ui-express\
+npm install -D @types/swagger-ui-express
+\f1\fs36 \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \
+}
