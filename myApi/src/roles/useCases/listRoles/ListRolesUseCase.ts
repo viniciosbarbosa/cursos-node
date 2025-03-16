@@ -1,14 +1,19 @@
 import {
+  IRolesRepository,
   RolesPagineteProperties,
-  RolesRepository,
-} from "./../../repositories/RolesRepository";
+} from "@roles/repositories/IRolesRepository";
+import { inject, injectable } from "tsyringe";
 
 type ListRolesUseCaseParams = {
   page: number;
   limit: number;
 };
+@injectable()
 export class ListRolesUseCase {
-  constructor(private rolesRepository: RolesRepository) {}
+  constructor(
+    @inject("RolesRepository")
+    private rolesRepository: IRolesRepository,
+  ) {}
 
   execute({
     page,
